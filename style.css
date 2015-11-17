@@ -1,0 +1,338 @@
+@import url(mini-reset.css);
+
+/* ----------------------------------------------------- Browser specific CSS */
+
+.js div { } /* apply only on JavaScript enabled browsers */
+.ie7 div { } /* apply only on Internet Explorer 7 and below */
+.ie6 div { } /* apply only on Internet Explorer 6 and below */
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------- huge screens */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------- min-width: 1024px */
+@media only screen and (min-width: 1024px) { } 
+
+/* ----------------------------------------------------------------------- */
+
+body {
+	font-family: Exo;
+	font-size: 15px;
+}
+
+h1 {
+	text-align: center;
+	margin: 50px;
+
+	font-size: 30px;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+h3 { /*Debug Überschrift*/
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+h4{
+	font-family: 'Gloria Hallelujah', cursive;
+  	font-size: 30px;
+  	text-align: center;
+  	margin-top: 50px;
+  	margin-bottom: 2px;
+}
+
+h5{
+	font-family: 'Gloria Hallelujah', cursive;
+  	font-size: 20px;
+  	text-align: center;
+  	margin-top: 0px;
+  	margin-bottom: 2px;
+}
+
+p {
+	font-size: 13px;
+}
+
+
+/* ---------------------------------------------------------- HEAD ------ */
+header {
+
+}
+
+
+#progressbar{
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	right: 5px;
+	height: 25px;
+
+	border: 3px solid black;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+
+	overflow: hidden;
+	padding: 0px 10px;
+
+	background-color: white;
+}
+
+#bar{
+	position: absolute;
+	top: -5px;
+	left: 0px;
+	bottom: -5px;
+
+	background-color: #5199fa;
+}
+
+#progress_info{
+	position: absolute;
+	display: table;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	z-index: 1;
+}
+
+.progress_infoCell{
+	display: table-cell;
+	width: 2%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.progress_infoCell_notOnSmall{
+	display: table-cell;
+	width: 2%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+/* ---------------------------------------------------------- MAIN ------ */
+
+main {
+	margin-top: 50px;
+}
+
+
+#user {
+	width: 500px;
+	min-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	border: solid 2px black;
+	text-align: center;
+}
+
+#info{
+	text-align: 
+}
+
+.sticky {
+	position: relative;
+	width: 400px;
+	min-height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+  	padding: 50px 10px;
+
+    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+
+  	-webkit-box-shadow: #DDD 0px 1px 2px;
+  	background-color: #F4F39E;
+  	border-color: #DEE184;
+  	-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  	-moz-box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  	box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+
+  	font-family: 'Gloria Hallelujah', cursive;
+  	font-size: 20px;
+  	text-align: center;
+}
+
+.sticky.taped:after {
+  display: block;
+  content: "";
+  position: absolute; 
+  width: 110px;
+  height: 30px;
+  top: -21px;
+  left: calc(50% - 55px);    
+  border: 1px solid #fff;
+  background: rgba(254, 254, 254, .6);
+  -webkit-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 0 3px rgba(0,0,0,0.1);
+  box-shadow: 0px 0 3px rgba(0,0,0,0.1);  
+}
+
+.sticky p{
+	font-family: 'Gloria Hallelujah', cursive;
+  	font-size: 15px;
+  	text-align: center;
+  	font-style: normal;
+}
+
+.buttons{
+	margin-top: 50px;
+	text-align: center;
+}
+
+#pictures{
+	display: table;
+	table-layout: fixed;
+
+	width: 700px;
+	margin: 0px auto;
+}
+
+#picRowName{
+	display: table-row;
+}
+
+#picRowName div{
+	display: table-cell;
+	text-align: center;
+}
+
+#picRowName div p{
+	font-size: 30px;
+}
+
+#picRowPic{
+	display: table-row;
+}
+
+.picColumn{
+	display: table-cell;
+	padding: 5px;
+}
+
+.picColumn:focus,
+.picColumn:hover,
+.picColumn:active{
+	background-color: #5199fa; 
+}
+
+.picColumn form{
+	margin: 2px;
+}
+
+.picRowPicButton{
+	width: 100%;
+}
+
+#picRowButton{
+	display: table-row;
+}
+
+
+
+#debugBox {
+	width: 500px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	overflow: scroll;
+	border: solid 5px black;
+	background-color: #414141;
+
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	color: white;
+	text-align: left;
+	white-space: nowrap;
+}
+
+#debugBox li{
+	list-style-type: square;
+}
+/* ---------------------------------------------------------- FOOTER ------ */
+
+footer {
+	margin-top: 100px;
+
+	text-align: center;
+}
+
+
+footer p {
+
+}
+
+
+
+
+
+
+/* ----------------------------------------------------------------------- */
+/* ---------------------------------------------------------- small screens */
+/* ----------------------------------------------------------------------- */
+
+@media only screen and (max-width: 715px) {
+	#pictures{
+		width: 100%;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	
+	h4{
+		font-size: 20px;
+	}
+
+	h5{
+		font-size: 15px;
+	}
+
+	#user{
+		width: auto;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.sticky{
+		width: auto;
+		margin-left: 5px;
+		margin-right: 5px;
+	}	
+
+	#picRowName div p{
+		font-size: 20px;
+	}
+
+	#debugBox{
+		width: auto;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.progress_infoCell_notOnSmall{
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.progress_infoCell{
+		font-size: 13px;
+	}
+}
+
+/* ----------------------------------------------------------------------- */
